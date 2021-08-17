@@ -1,0 +1,34 @@
+{% extends 'index.html' %} {% load static %}
+{% block body_class %}home-view{% endblock %}
+
+{% block content %}
+<div class="home-banner"></div>
+<div class="container my-5">
+    <h1 class="text-center mb-5 border-bottom">El mejor servicio</h1>
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="{% static 'img/card-1.png' %}" alt="Césped sintético">
+            <div class="card-body">
+                <h5 class="card-title">Césped sintético</h5>
+                <p class="card-text">Todas nuestras canchas cuentan con césped sintético.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static 'img/card-2.png' %}" alt="Infraestructura">
+            <div class="card-body">
+                <h5 class="card-title">Infraestructura</h5>
+                <p class="card-text">Canchas techadas y sistemas de luces led de última generación para que puedas disfrutar de la mejor
+                experiencia sin importar el clima.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static 'img/card-3.png' %}" alt="3 Canchas">
+            <div class="card-body">
+                <h5 class="card-title">3 Canchas</h5>
+                <p class="card-text">Ampliación continúa para que no te quedes sin tu lugar.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
